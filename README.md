@@ -1,0 +1,2 @@
+# ShareKingTrade
+new repo
