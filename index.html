@@ -120,6 +120,87 @@
         display:none;
       }
     }
+    .contact-section{
+  background:#111827;
+  padding:80px 5%;
+}
+
+.contact-heading{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.contact-heading h1{
+  font-size:70px;
+  color:white;
+  margin-bottom:20px;
+}
+
+.contact-heading p{
+  color:#777;
+  font-size:18px;
+  max-width:700px;
+  margin:auto;
+  line-height:1.7;
+}
+
+.contact-boxes{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  overflow:hidden;
+  border-radius:20px;
+}
+
+.contact-card{
+  padding:70px 40px;
+  text-align:center;
+  color:white;
+  transition:0.3s;
+}
+
+.contact-card:hover{
+  transform:scale(1.03);
+}
+
+.contact-card .icon{
+  font-size:70px;
+  margin-bottom:30px;
+}
+
+.contact-card h3{
+  font-size:22px;
+  margin-bottom:15px;
+  font-weight:400;
+}
+
+.contact-card h2{
+  font-size:25px;
+  font-weight:bold;
+}
+
+.cyan{
+  background:#25cbd3;
+}
+
+.gold{
+  background:#d8ac62;
+}
+
+.red{
+  background:#ff2d2d;
+}
+
+@media(max-width:768px){
+
+  .contact-heading h1{
+    font-size:45px;
+  }
+
+  .contact-card h2{
+    font-size:28px;
+  }
+
+}
   </style>
 </head>
 
@@ -132,7 +213,7 @@
       <a href="#">Home</a>
       <a href="#">Markets</a>
       <a href="#">Portfolio</a>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -160,12 +241,52 @@
     </div>
 
     <div class="card">
-      <h3>Fast Trading</h3>
-      <p>Execute trades quickly with a smooth trading experience.</p>
+  <h3>Fast Trading</h3>
+  <p>Execute trades quickly with a smooth trading experience.</p>
+</div>
+
+</section>
+
+<section id="contact" class="contact-section">
+
+  <div class="contact-heading">
+    <h1>Contact Us</h1>
+
+    <p>
+      We are here to help you. Reach out to us using any of the
+      options below.
+    </p>
+  </div>
+
+  <div class="contact-boxes">
+
+    <div class="contact-card cyan">
+      <div class="icon">📞</div>
+
+      <h3>CALL TODAY</h3>
+
+      <h2>+91 9389773252</h2>
     </div>
 
-  </section>
+    <div class="contact-card gold">
+      <div class="icon">📩</div>
 
+      <h3>REQUEST A FREE QUOTE</h3>
+
+      <h2>+91 9389773252</h2>
+    </div>
+
+    <div class="contact-card red">
+      <div class="icon">✉️</div>
+
+      <h3>EMAIL US</h3>
+
+      <h2>shareking021@gmail.com</h2>
+    </div>
+
+  </div>
+
+</section>
   <footer>
     © 2026 ShareKing Trade. All Rights Reserved.
   </footer>
